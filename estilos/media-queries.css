@@ -40,13 +40,14 @@
     }
 
     div.imagem {
-        float: left;
+        float: right;
         width: 30%;
         height: 100%;
+        background-position: center center;
     }
 
     div#formulario {
-        float: right;
+        float: left;
         width: 70%;
     }
 
