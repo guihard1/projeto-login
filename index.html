@@ -17,15 +17,15 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-                <form action="dados.js">
+                <form action="dados.js" method="post" autocomplete="on">
                     <div id="caixas">
-                        <div class="mail" method="post">
+                        <div class="mail">
                             <span class="material-icons">person</span>
-                            <input type="text" name="email" id="iemail" placeholder="seu e-mail">
+                            <input type="text" name="email" id="iemail" placeholder="seu e-mail" required autocomplete="email" maxlength="30">
                         </div>
                         <div class="sen">
                             <span class="material-icons">key</span>
-                            <input type="password" name="senha" id="isenha" placeholder="sua senha"><br>
+                            <input type="password" name="senha" id="isenha" placeholder="sua senha" required min="8" max="20" autocomplete="current-password"><br>
                         </div>
                         <div id="botao1">
                             <input type="submit" value="Entrar">
