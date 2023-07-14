@@ -3,34 +3,54 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 
 html {
     height: 100vh;
-    background-image: linear-gradient(to bottom, #8325c0, #5b00ca, #17878f);
+    background-color: #5b00ca;
 }
 
 main {
-    display: block;
-    margin: auto;
-    width: 60vw;
-    background-color: rgb(255, 255, 255);
-    margin-top: 3rem;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     border-radius: 15px;
     box-shadow: 0px 0px 5px black;
 }
 
-div.imagem > img {
-    width: 60vw;
-    border-radius: 10px 10px 0px 0px;
+#container {
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /*esconder o que sai da caixa*/
+    transition: width 0.2s, height 0.2s;
+    transition-timing-function: ease;
 }
 
-#log h1 {
+div.imagem {
+    background: #5b00ca url(../imagens/pexels-anni-roenkae-2457284.jpg);
+    background-size: cover;
+    height: 200px;
+    background-position: left bottom;
+}
+
+div#formulario {
+    display: block;
+    padding: 10px;
+
+}
+
+#formulario h1 {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bolder;
-    padding: 10px 0px 10px 0px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.089);
 }
 
@@ -50,36 +70,37 @@ div#caixas > #iemail, #isenha {
 div.mail {
     background-color: #8b39f0f8;
     border-radius: 5px;
-    padding: 2px 0px 2px 35px;
+    padding: 2px 0px 2px 28px;
     position: relative;
-    margin: 0.2rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 div.sen {
     background-color: #8b39f0f8;
     border-radius: 5px;
-    padding: 2px 0px 2px 35px;
+    padding: 2px 0px 2px 28px;
     position: relative;
-    margin: 0.2rem;
+    margin-bottom: 5px;
 }
 
 div.sen span {
     position: absolute;
-    left: 0.5rem;
+    left: 0.3rem;
     color: white;
     top: 0.5rem;
 }
 
 div.mail span {
     position: absolute;
-    left: 0.5rem;
+    left: 0.3rem;
     color: white;
     top: 0.5rem;
 }
 
 div.mail input, div.sen input {
     font-size: 1rem;
-    padding: 10px 50px 5px 1px;
+    padding: 10px 40px 5px 1px;
     border-radius: 10px;
     background-color: rgba(219, 219, 219, 0.945);
 }
@@ -87,7 +108,7 @@ div.mail input, div.sen input {
 div#botao1 input {
     background-color: rgba(27, 136, 118, 0.815);
     color: white;
-    width: 59vw;
+    width: 56vw;
     margin: 0px 0px 3px 0px;
     border-radius: 5px;
     padding: 8px;
@@ -98,7 +119,7 @@ div#botao1 input {
 div#botao2 input {
     background-color: rgba(255, 255, 255, 0.541);
     color: rgb(22, 112, 97);
-    width: 59vw;
+    width: 56vw;
     margin: 0px 0px 10px 0px;
     border-radius: 5px;
     padding: 8px;

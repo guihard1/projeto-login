@@ -1,37 +1,60 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    * {
-        margin: 0;
-        padding: 0;
+    html {
+        background-image: linear-gradient(to bottom, #8325c0, #5b00ca, #17878f);
     }
-    main {
-        display: block;
-        margin: auto;
+
+    #container {
         width: 90vw;
-        height: 40vh;
-        background-color: rgb(255, 255, 255);
-        margin-top: 7rem;
-        border-radius: 15px;
-        box-shadow: 0px 0px 5px black;
     }
 
-    main > div#container > div.imagem > img {
-        display: inline-block;
-        width: 25vw;
-        height: 38.1vw;
-        border-radius: 5px 0px 0px 5px;
+    div.imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+        background-position: center center;
     }
 
-    #log h1 {
-        width: 100vw;
+    div#formulario {
+        float: right;
+        width: 70%;
+    }
+
+    div.mail input, div.sen input {
+        width: 99%;
+    }
+
+    div#botao1 input, div#botao2 input {
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    main {
-        display: block;
-        margin: auto;
-        margin-top: 3rem;
+@media screen and (min-width: 992px){
+    html {
+        background-image: linear-gradient(to bottom, #8325c0, #5b00ca, #17878f);
+    }
+
+    #container {
+        width: 950px;
+    }
+
+    div.imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    div#formulario {
+        float: right;
+        width: 70%;
+    }
+
+    div.mail input, div.sen input {
+        width: 99%;
+    }
+
+    div#botao1 input, div#botao2 input {
+        width: 100%;
     }
 }
