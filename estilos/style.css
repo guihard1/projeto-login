@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #8325c0, #5b00ca, #17878f);
+}
+
+main {
+    display: block;
+    margin: auto;
+    width: 60vw;
+    background-color: rgb(255, 255, 255);
+    margin-top: 3rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+}
+
+div.imagem > img {
+    width: 60vw;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#log h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 10px 0px 10px 0px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.089);
+}
+
+#log p {
+    padding: 0px 10px 10px 10px;
+    text-align: left;
+}
+
+div#caixas {
+    text-align: center;
+}
+
+div#caixas > #iemail, #isenha {
+    font-size: 1rem;
+}
+
+div.mail {
+    background-color: #8b39f0f8;
+    border-radius: 5px;
+    padding: 2px 0px 2px 35px;
+    position: relative;
+    margin: 0.2rem;
+}
+
+div.sen {
+    background-color: #8b39f0f8;
+    border-radius: 5px;
+    padding: 2px 0px 2px 35px;
+    position: relative;
+    margin: 0.2rem;
+}
+
+div.sen span {
+    position: absolute;
+    left: 0.5rem;
+    color: white;
+    top: 0.5rem;
+}
+
+div.mail span {
+    position: absolute;
+    left: 0.5rem;
+    color: white;
+    top: 0.5rem;
+}
+
+div.mail input, div.sen input {
+    font-size: 1rem;
+    padding: 10px 50px 5px 1px;
+    border-radius: 10px;
+    background-color: rgba(219, 219, 219, 0.945);
+}
+
+div#botao1 input {
+    background-color: rgba(27, 136, 118, 0.815);
+    color: white;
+    width: 59vw;
+    margin: 0px 0px 3px 0px;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.041);
+    cursor: pointer;
+}
+
+div#botao2 input {
+    background-color: rgba(255, 255, 255, 0.541);
+    color: rgb(22, 112, 97);
+    width: 59vw;
+    margin: 0px 0px 10px 0px;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid rgb(22, 112, 97);
+    cursor: pointer;
+}
+
+div#botao1 input:hover {
+    background-color: rgba(20, 99, 86, 0.877);
+    color: rgba(255, 255, 255, 0.815);
+    border: 1px solid rgba(27, 136, 118, 0.815);
+}
+
+div#botao2 input:hover {
+    background-color: rgba(5, 83, 70, 0.473);
+    color: white;
+}
+
+div.mail input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+div.sen input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background-color: rgb(255, 255, 255);
+}

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        display: block;
+        margin: auto;
+        width: 90vw;
+        height: 40vh;
+        background-color: rgb(255, 255, 255);
+        margin-top: 7rem;
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px black;
+    }
+
+    main > div#container > div.imagem > img {
+        display: inline-block;
+        width: 25vw;
+        height: 38.1vw;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    #log h1 {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    main {
+        display: block;
+        margin: auto;
+        margin-top: 3rem;
+    }
+}
