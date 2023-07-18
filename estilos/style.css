@@ -103,15 +103,16 @@ div.mail span {
 
 div.mail input, div.sen input {
     font-size: 1rem;
-    padding: 10px 30px 5px 1px;
+    padding: 5px 0px 10px 0px;
     border-radius: 10px;
     background-color: rgba(219, 219, 219, 0.945);
+    width: 98%;
 }
 
 div#botao1 input {
     background-color: rgba(27, 136, 118, 0.815);
     color: white;
-    width: 56vw;
+    width: 100%;
     margin: 0px 0px 3px 0px;
     border-radius: 5px;
     padding: 8px;
@@ -122,7 +123,7 @@ div#botao1 input {
 div#botao2 input {
     background-color: rgba(255, 255, 255, 0.541);
     color: rgb(22, 112, 97);
-    width: 56vw;
+    width: 100%;
     margin: 0px 0px 10px 0px;
     border-radius: 5px;
     padding: 8px;
